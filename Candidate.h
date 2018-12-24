@@ -1,9 +1,11 @@
 #ifndef COM_PIRATECODY_CANDIDATE
 #define COM_PIRATECODY_CANDIDATE
 #include <string>
+#include <iostream>
 #include "Office.h"
 #include "State.h"
 using std::string;
+using std::ostream;
 class Candidate {
 private:
 	/** Name of the Candidate */
@@ -99,6 +101,14 @@ public:
 	@param office desired office value
 	*/
 	void setOffice(Office office);
+
+	/**
+	@brief Operator to print out data within a candidate object to an ostream
+
+	@param out ostream to print to
+	@param c candidate with data to print
+	*/
+	friend ostream & operator<<(ostream &out, Candidate &c);
 
 };
 

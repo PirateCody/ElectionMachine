@@ -1,6 +1,10 @@
 #ifndef COM_PIRATECODY_STATE
 #define COM_PIRATECODY_STATE
-enum State {
-	NORTH, SOUTH, WEST, NATIONAL
+#include <vector>
+class State {
+public:
+	string getName() const;
+private:
+	unsigned int numDistricts;
 };
 #endif

@@ -10,7 +10,11 @@ using namespace std;
 class District {
 public:
 private:
+	/*Map of pointers to candidates running in this district*/
 	map<string, Candidate*> candidates;
+
+	/*Value of any district wide modifier*/
+	double leaning;
 };
 
 

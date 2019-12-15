@@ -3,7 +3,7 @@
 #include <string>
 using std::string;
 enum Office {
-	PRESIDENT, SENATOR, REPRESENTATIVE, NONE
+	PRESIDENT, SENATOR, REPRESENTATIVE, GOVERNOR, STATE_LEGISLATOR, NONE
 };
 
 #endif

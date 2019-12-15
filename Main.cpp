@@ -4,6 +4,7 @@
 #include "Office.h"
 #include "CandidateList.h"
 #include "State.h"
+#include "District.h"
 #include <iostream>
 #include <string>
 using namespace std;

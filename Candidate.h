@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 #include "Office.h"
-#include "State.h"
+//#include "State.h"
 using std::string;
 using std::ostream;
 class Candidate {
@@ -17,7 +17,7 @@ private:
 	/** Office the candidate is running for */
 	Office office;
 	/** State the candidate is running in */
-	State state;
+	//State state;
 
 public:
 	/**
@@ -28,7 +28,7 @@ public:
 	@param state state the candidate is running in
 	@param incumbent whether they are an incumbent
 	*/
-	Candidate(string name, Office office, State state, bool incumbent);
+	Candidate(string name, Office office, /*State state,*/ bool incumbent);
 
 	/**
 	@brief Gets the name
@@ -65,7 +65,7 @@ public:
 
 	@return return state value
 	*/
-	State getState() const;
+	//State getState() const;
 
 	/**
 	@brief Adds to the total modifier value
@@ -79,7 +79,7 @@ public:
 
 	@param state desired state value
 	*/
-	void setState(State state);
+	//void setState(State state);
 
 	/**
 	@brief Sets the name of the candidate

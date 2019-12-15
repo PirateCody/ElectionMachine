@@ -1,9 +1,9 @@
 #include "Candidate.h"
 using std::endl;
-Candidate::Candidate(string name, Office office, State state, bool incumbent) {
+Candidate::Candidate(string name, Office office, /*State state,*/ bool incumbent) {
 	candidateName = name;
 	this->office = office;
-	this->state = state;
+	//this->state = state;
 	this->incumbent = incumbent;
 	modifiers = 0;
 }
@@ -24,17 +24,17 @@ Office Candidate::getOffice() const {
 	return office;
 }
 
-State Candidate::getState() const {
-	return state;
-}
+//State Candidate::getState() const {
+//	return state;
+//}
 
 void Candidate::addModifier(double value) {
 	modifiers += value;
 }
 
-void Candidate::setState(State state) {
-	this->state = state;
-}
+//void Candidate::setState(State state) {
+//	this->state = state;
+//}
 
 void Candidate::setName(string pName) {
 	candidateName = pName;
@@ -59,16 +59,16 @@ ostream & operator<<(ostream & out, Candidate & c){
 	default: office = "None";
 	}
 
-	switch (c.getState()) {
+	/*switch (c.getState()) {
 	case NORTH: state = "North"; break;
 	case WEST: state = "Jefferson"; break;
 	case SOUTH: state = "Dixie"; break;
 	default: state = "None";
-	}
+	}*/
 
 
 	out << c.candidateName << endl;
-	out << "State: " << state << endl;
+	//out << "State: " << state << endl;
 	out << "Office: " << office << endl;
 	out << "Modifiers: " << c.getModifiers() << endl;
 

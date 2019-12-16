@@ -118,6 +118,7 @@
     <ClInclude Include="CandidateList.h" />
     <ClInclude Include="District.h" />
     <ClInclude Include="ElectionMachine.h" />
+    <ClInclude Include="ElectionType.h" />
     <ClInclude Include="Office.h" />
     <ClInclude Include="Party.h" />
     <ClInclude Include="State.h" />

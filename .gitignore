@@ -3,3 +3,5 @@ Debug/
 *.log
 *.log
 *.log
+ElectionMachine.vcxproj.user
+ElectionMachine.vcxproj

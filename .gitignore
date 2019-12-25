@@ -5,3 +5,4 @@ Debug/
 *.log
 ElectionMachine.vcxproj.user
 ElectionMachine.vcxproj
+*.vcxproj
